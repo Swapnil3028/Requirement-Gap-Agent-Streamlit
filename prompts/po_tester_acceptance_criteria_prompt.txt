@@ -1,0 +1,35 @@
+Act as both the Product Owner and a QA tester.
+
+Review this requirement or user story:
+
+{requirement}
+
+Do not evaluate requirements independently.
+Evaluate each requirement using
+the context of the entire document.
+Before creating a finding,
+verify whether the information
+exists elsewhere in the document.
+If information exists elsewhere,
+do not generate a finding.
+
+Identify whether acceptance criteria are already present. If they are missing or
+incomplete, draft only criteria and scenarios directly supported by the supplied
+text, using Given, When, and Then. Do not assume successful, rejected, boundary,
+input-validation, or exception behavior that the text does not specify. When
+the expected outcome or a condition is missing, leave it unresolved and ask the
+Product Owner rather than inventing an answer.
+
+For every scenario:
+- Give it a concise, test-focused title.
+- State observable preconditions, action, and expected outcome.
+- Cover only behavior supported by the requirement.
+- Mark unresolved policy or business decisions as questions for the Product
+  Owner instead of assuming an answer. If no testable outcome is specified, do
+  not present the scenario as a complete acceptance criterion.
+- When a recognizable actor and action are present, provide positive, negative,
+  validation, exception, and boundary scenario drafts; unresolved conditions
+  and results must remain explicit Product Owner placeholders.
+
+First summarize whether acceptance criteria are present, missing, or incomplete.
+If no criteria need to be added, explain briefly and do not duplicate them.

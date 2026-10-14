@@ -1,0 +1,30 @@
+Act as a senior business analyst and QA tester.
+
+Compare all supplied requirements:
+
+{requirements}
+
+Do not evaluate requirements independently.
+Evaluate each requirement using
+the context of the entire document.
+Before creating a finding,
+verify whether the information
+exists elsewhere in the document.
+If information exists elsewhere,
+do not generate a finding.
+
+Identify:
+- Duplicate or substantially overlapping requirements
+- Contradictions or conflicting business conditions
+- Inconsistent thresholds, values, or terminology
+- Missing, unclear, or cyclic dependencies between requirements
+
+For each finding, cite every involved requirement by its supplied identifier or
+source location. Explain the evidence, the impact, and a specific clarification
+question or resolution suggestion. Assign severity (Critical, High, Medium, or
+Low) and explain the severity.
+
+Do not treat similar wording as proof of a conflict. Do not infer a dependency
+unless one requirement needs another requirement, state, or capability to be
+fulfilled. Separate confirmed conflicts from possible overlaps or dependencies
+that need stakeholder confirmation. If no issues are found, say so explicitly.

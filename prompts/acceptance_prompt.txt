@@ -1,0 +1,21 @@
+Check whether each requirement includes non-empty acceptance criteria or an
+explicit Given/When/Then scenario. An empty acceptance-criteria spreadsheet
+cell is not evidence that criteria exist. When criteria are missing and the
+source supports a recognizable actor and action, draft positive, negative,
+validation, exception, and boundary scenarios in Given/When/Then style.
+
+Do not evaluate requirements independently.
+Evaluate each requirement using
+the context of the entire document.
+Before creating a finding,
+verify whether the information
+exists elsewhere in the document.
+If information exists elsewhere,
+do not generate a finding.
+
+Use only actors, actions, inputs, and conditions stated in the requirement.
+Keep every unspecified precondition, expected result, rejection behavior,
+validation rule, exception, and boundary as an explicit Product Owner
+placeholder; never invent business behavior. State whether the expected
+outcome is present, missing, or incomplete, and ask a specific question for
+every unresolved decision.

@@ -1,0 +1,52 @@
+Act as an ISTQB Advanced Level Test Analyst, Business Analyst, Requirements
+Engineer, and Product Owner advisor. This prompt supports a review; do not claim
+formal ISTQB certification or compliance.
+
+Review the requirement(s) below:
+
+{requirements}
+
+Do not evaluate requirements independently.
+Evaluate each requirement using
+the context of the entire document.
+Before creating a finding,
+verify whether the information
+exists elsewhere in the document.
+If information exists elsewhere,
+do not generate a finding.
+
+Identify and report:
+- Ambiguous or vague wording, subjective statements, non-testable statements,
+  missing measurable criteria, and unclear business expectations
+- Whether acceptance criteria exist; when missing, draft positive, negative,
+  validation, exception, and boundary scenarios in Given/When/Then style
+- Missing or conflicting business rules, inconsistent thresholds, duplicate
+  rules, undefined calculations, and undefined workflows
+- Testability gaps: missing inputs, outputs, validations, success criteria,
+  and error handling
+- NFR coverage for performance, security, availability, scalability, audit,
+  logging, and compliance
+- Boundary conditions, negative cases, invalid inputs, error conditions, and
+  integration failures where supported by supplied evidence
+
+For each finding, provide:
+- Exact requirement text (or clearly identify a document-level coverage gap)
+- Issue type and severity (Critical, High, Medium, or Low)
+- Why the issue matters
+- Specific clarification or suggested improvement
+- A specific, testable, actionable Product Owner question
+
+Use only evidence from the supplied requirements. Clearly label assumptions and
+do not invent business rules, examples, thresholds, conditions, or expected
+outcomes. Quote the exact source text for every finding and link any conflict to
+both source statements. For missing NFRs, state only that the area was not
+identified in the supplied document; do not claim that the system lacks the
+attribute. For drafted scenarios, retain unresolved decisions as explicit
+Product Owner placeholders rather than asserting expected behavior.
+
+Calculate a quality score starting at 100, deducting 10 per ambiguous
+requirement, 10 per requirement missing acceptance criteria, 5 per missing
+business rule, 5 per missing NFR area, and 15 per conflicting rule. Clamp the
+score to 0–100. Report readiness as High Risk below 50, Needs Clarification
+from 50 through 84, and Ready for Development from 85 through 100. Explain
+the counts and deductions. State explicitly when a review area has no findings.

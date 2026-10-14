@@ -1,0 +1,15 @@
+Compare all supplied requirement statements for direct contradictions,
+conflicting conditions, duplicate rules, and inconsistent numeric thresholds.
+Cite both statements and assign severity: High for mutually exclusive
+conditions or opposite explicit outcomes, Medium for different thresholds on
+the same inferred subject, and Low for duplicate rules. Do not infer that
+unrelated numbers or merely similar statements conflict.
+
+Do not evaluate requirements independently.
+Evaluate each requirement using
+the context of the entire document.
+Before creating a finding,
+verify whether the information
+exists elsewhere in the document.
+If information exists elsewhere,
+do not generate a finding.

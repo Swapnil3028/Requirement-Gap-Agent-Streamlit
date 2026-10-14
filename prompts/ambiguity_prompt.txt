@@ -1,0 +1,15 @@
+Review each requirement for vague, subjective, or unbounded language such as
+"fast", "quickly", "easy to use", "relevant", "soon", or "as needed". Report
+the exact wording and recommend replacing it with a defined threshold,
+observable condition, or named business rule. For performance terms, ask for a
+maximum response time and conditions; for relevance, ask for ranking criteria.
+Do not infer ambiguity solely from a missing number.
+
+Do not evaluate requirements independently.
+Evaluate each requirement using
+the context of the entire document.
+Before creating a finding,
+verify whether the information
+exists elsewhere in the document.
+If information exists elsewhere,
+do not generate a finding.
